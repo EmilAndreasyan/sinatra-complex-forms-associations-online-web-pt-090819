@@ -15,3 +15,13 @@
 
   <input type="submit" value="Create Owner">
 </form>
+
+<h1>Create a new Owner</h1>
+<form action="/owners" method="post">
+  <label>Name: </label>
+  <input type="text" name="owner[name]">
+  
+  <% @pets.each do |pet| %>
+  <input type="checkbox">
+  <% end %>
+</form>
